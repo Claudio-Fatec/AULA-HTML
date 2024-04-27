@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    margin: 0%;
+    margin: 0;
     font-family: Arial, sans-serif;
   }
   
@@ -32,12 +32,15 @@ body, html {
   }
   
   .content {
-    margin: 250%;
+    margin-left: 250px;
     padding: 0;
+    height: 100%;
+    overflow: auto; 
   }
   
   .content iframe {
     width: 100%;
-    height: calc(100% - 40);
-  
+    height: 100%;
+    border: none;
+  }
   
