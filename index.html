@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula HTML</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu com SideNav</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<h1 style="text-align: center;">AULA HTML</h1>
 <body>
-    <P style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large; text-align: center;">Nesta pagina iremos aprender alguns de códigos que irão ajudar a montar um site HTML</P>
 
-    <p style="font-size: large;">Segue abaixo alguns exemplos e suas aplicações:</p>
+<div class="sidenav">
+  <h2>Menu</h2>
+  <a href="pages/pagina1.html" target="content">Página 1</a>
+  <a href="pages/pagina2.html" target="content">Página 2</a>
+  <a href="pages/pagina3.html" target="content">Página 3</a>
+  <a href="pages/pagina4.html" target="content">Página 4</a>
+  <a href="pages/pagina5.html" target="content">Página 5</a>
+</div>
 
-    <p> A TAG < p > indica um pragráfo dentro do corpo do HTML. Tudo que estiver dentro dessa TAG é considerado um paragrafo.
-    Ex. <code style="font-size: large;">&lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;</code> </p> <br><br> 
-
-    
-    
-    
-    <p>A TAG  <code style="font-size: large;">&lt;H1&gt a  <code style="font-size: large;">&lt;H6&gt Define títulos de diferentes níveis de importância, onde <code style="font-size: large;">&lt;H1&gt é o mais importante e <code style="font-size: large;">&lt;H6&gt  é o menos importante 
-        <h1><code style="font-size: large;">&lt;H1&gt MAIOR IMPORTANCIA <code style="font-size: large;">&lt;/H1&gt </h1>
-                      <h6><code style="font-size:small;">&lt;H6&gt MENOR IMPORTANCIA <code style="font-size:small;">&lt;/H6&gt </h6>    
-    </p>
-
+<div class="content" id="content">
+  <iframe src="pages/pagina1.html" name="content" frameborder="0" width="100%" height="100%"></iframe>
+</div>
 
 </body>
 </html>
