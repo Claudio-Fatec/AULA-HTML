@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML de Links com Exemplos</title>
+</head>
+<body>
+
+    <h1>Tags HTML de Links com Exemplos</h1>
+
+    <p>As tags de link são usadas para criar links para outras páginas da web ou recursos. Aqui estão alguns exemplos:</p>
+
+    <h2>&lt;a&gt;</h2>
+    <p>A tag &lt;a&gt; é usada para criar um link. O atributo <strong>href</strong> especifica o URL do destino:</p>
+    <a href="https://www.example.com">Exemplo de Link</a>
+
+    <h2>Links Internos</h2>
+    <p>Você também pode criar links para seções dentro da mesma página usando IDs:</p>
+    <ul>
+        <li><a href="#section1">Ir para a Seção 1</a></li>
+        <li><a href="#section2">Ir para a Seção 2</a></li>
+    </ul>
+
+    <h2>&lt;base&gt;</h2>
+    <p>A tag &lt;base&gt; especifica o URL base para todos os links na página. É usado dentro do elemento &lt;head&gt;:</p>
+    <base href="https://www.example.com/">
+
+    <h2>Links com Target</h2>
+    <p>O atributo <strong>target</strong> é usado para especificar onde abrir o link. Os valores comuns são "_blank" para abrir em uma nova janela e "_self" para abrir na mesma janela:</p>
+    <a href="https://www.example.com" target="_blank">Abrir em Nova Janela</a>
+
+    <h2>Links de Email</h2>
+    <p>Você pode criar links para endereços de email usando o prefixo "mailto:":</p>
+    <a href="mailto:exemplo@example.com">Enviar Email</a>
+
+    <h2>Links de Download</h2>
+    <p>Você pode criar links para download de arquivos adicionando o atributo <strong>download</strong>:</p>
+    <a href="arquivo.zip" download>Download do Arquivo</a>
+
+    <h2>Links de Imagem</h2>
+    <p>As tags de link também podem envolver imagens:</p>
+    <a href="https://www.example.com">
+        <img src="imagem.jpg" alt="Imagem de Exemplo">
+    </a>
+
+    <h2>Links de Âncora</h2>
+    <p>Links de âncora são usados para retornar ao início da página:</p>
+    <a href="#top">Voltar ao Topo</a>
+
+    <h2>&lt;area&gt;</h2>
+    <p>A tag &lt;area&gt; é usada em conjunto com a tag &lt;map&gt; para criar links em mapas de imagem:</p>
+    <map name="mapa">
+        <area shape="rect" coords="0,0,50,50" href="area1.html" alt="Área 1">
+        <area shape="circle" coords="100,100,50" href="area2.html" alt="Área 2">
+    </map>
+    <img src="imagem-map.png" usemap="#mapa" alt="Mapa de Imagem">
+
+    <h2>Links Desabilitados</h2>
+    <p>Você também pode desabilitar um link adicionando o atributo <strong>disabled</strong>:</p>
+    <a href="#" disabled>Link Desabilitado</a>
+
+    <h2>&lt;link&gt;</h2>
+    <p>A tag &lt;link&gt; é usada para vincular um documento a uma folha de estilo externa ou outros recursos:</p>
+    <link rel="stylesheet" href="estilo.css">
+
+</body>
+</html>

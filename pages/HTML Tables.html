@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML de Tabela com Exemplos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tags HTML de Tabela com Exemplos</h1>
+
+    <p>As tabelas HTML são usadas para exibir dados em filas e colunas. Elas são compostas principalmente pelas seguintes tags:</p>
+
+    <ul>
+        <li><strong>&lt;table&gt;</strong>: Define a tabela.</li>
+        <li><strong>&lt;tr&gt;</strong>: Define uma linha na tabela.</li>
+        <li><strong>&lt;th&gt;</strong>: Define um cabeçalho de coluna na tabela.</li>
+        <li><strong>&lt;td&gt;</strong>: Define uma célula na tabela.</li>
+    </ul>
+
+    <h2>Exemplo Básico</h2>
+    <p>Aqui está um exemplo básico de uma tabela:</p>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>30</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>25</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+    </table>
+
+    <h2>Tabela com Estilos</h2>
+    <p>Você pode estilizar a tabela usando CSS:</p>
+    <table>
+        <tr>
+            <th style="background-color: #f2f2f2;">Nome</th>
+            <th style="background-color: #f2f2f2;">Idade</th>
+            <th style="background-color: #f2f2f2;">Cidade</th>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>35</td>
+            <td>Brasília</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>28</td>
+            <td>Salvador</td>
+        </tr>
+    </table>
+
+    <h2>Tabela com Colspan e Rowspan</h2>
+    <p>Você também pode mesclar células em uma tabela usando os atributos <strong>colspan</strong> e <strong>rowspan</strong>:</p>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Informações</th>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td rowspan="2">Informações Adicionais: <br> Idade: 35 <br> Cidade: Brasília</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+        </tr>
+    </table>
+
+</body>
+</html>
