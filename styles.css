@@ -13,6 +13,7 @@ body, html {
     left: 0;
     background-color: #111;
     padding-top: 20px;
+    overflow:scroll 
   }
   
   .sidenav h2 {
@@ -26,11 +27,12 @@ body, html {
     font-size: 18px;
     color: #fff;
     display: block;
-  }
+    
+    }
   
   .sidenav a:hover {
     background-color: #555;
-  }
+     }
   
   .content {
     margin-left: 250px;
@@ -44,4 +46,5 @@ body, html {
     height: 100%;
     border: none;
   }
+  
   
