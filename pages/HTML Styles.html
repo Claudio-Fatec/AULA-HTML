@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML de Estilos com Exemplos</title>
+</head>
+<body>
+
+    <h1>Tags HTML de Estilos com Exemplos</h1>
+
+    <p>As tags de estilo são usadas para aplicar estilos visuais a elementos HTML. Elas podem ser usadas internamente, com a tag &lt;style&gt;, ou externamente, vinculando um arquivo de estilo CSS. Aqui estão alguns exemplos:</p>
+
+    <h2>&lt;style&gt;</h2>
+    <p>A tag &lt;style&gt; é usada para definir estilos diretamente dentro de um documento HTML. Os estilos definidos dentro desta tag se aplicam apenas ao documento atual.</p>
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+
+        .destaque {
+            font-weight: bold;
+        }
+    </style>
+
+    <p>Este é um exemplo de parágrafo com estilo definido internamente.</p>
+    <p class="destaque">Este parágrafo tem uma classe de destaque.</p>
+
+    <h2>Estilos Externos</h2>
+    <p>Os estilos também podem ser definidos em um arquivo CSS externo e, em seguida, vinculados ao documento HTML usando a tag &lt;link&gt; no cabeçalho.</p>
+    <link rel="stylesheet" href="estilos.css">
+
+    <p>Este é um exemplo de parágrafo com estilo definido em um arquivo CSS externo.</p>
+    <p class="destaque">Este parágrafo também tem a classe de destaque.</p>
+
+</body>
+</html>
