@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML de JavaScript com Exemplos</title>
+    <script>
+        // Exemplo de código JavaScript embutido
+        function exibirMensagem() {
+            alert('Olá! Este é um exemplo de JavaScript embutido.');
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Tags HTML de JavaScript com Exemplos</h1>
+
+    <p>O JavaScript é uma linguagem de programação que pode ser usada para adicionar interatividade e dinamismo a uma página web. Aqui estão alguns exemplos de como usar JavaScript em uma página HTML:</p>
+
+    <h2>JavaScript Embutido</h2>
+    <p>Você pode incluir código JavaScript diretamente dentro das tags `<script>` na seção `<head>` ou `<body>` do seu documento:</p>
+    <button onclick="exibirMensagem()">Clique Aqui</button>
+
+    <h2>JavaScript Externo</h2>
+    <p>Também é possível incluir JavaScript em um arquivo externo e referenciá-lo na sua página HTML:</p>
+    <script src="exemplo.js"></script>
+
+    <h2>Manipulação do DOM</h2>
+    <p>O JavaScript pode ser usado para manipular elementos HTML, como alterar conteúdo, estilo e comportamento:</p>
+    <p id="paragrafo">Este é um parágrafo de exemplo.</p>
+    <button onclick="document.getElementById('paragrafo').style.color = 'red';">Alterar Cor</button>
+
+    <h2>Eventos</h2>
+    <p>JavaScript pode ser usado para responder a eventos, como cliques de botões:</p>
+    <button id="botao">Clique Aqui</button>
+    <script>
+        // Exemplo de evento JavaScript
+        document.getElementById('botao').addEventListener('click', function() {
+            alert('Você clicou no botão!');
+        });
+    </script>
+
+</body>
+</html>
