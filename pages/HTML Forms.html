@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Formulário em HTML com Exemplos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tags de Formulário em HTML com Exemplos</h1>
+
+    <p>As tags de formulário HTML permitem criar formulários interativos em uma página da web. Aqui estão algumas das tags mais comuns:</p>
+
+    <h2>Exemplo de Formulário Básico</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Exemplo de Formulário com Área de Texto</h2>
+    <form>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Exemplo de Formulário com Seleção</h2>
+    <form>
+        <label for="cor">Cor Favorita:</label>
+        <select id="cor" name="cor" required>
+            <option value="">Selecione uma cor</option>
+            <option value="azul">Azul</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="verde">Verde</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
