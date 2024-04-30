@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Formulário em HTML com Exemplos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Elementos de Formulário em HTML com Exemplos</h1>
+
+    <p>Os elementos de formulário em HTML são usados para criar diferentes tipos de campos que os usuários podem preencher e enviar. Aqui estão alguns dos elementos de formulário mais comuns:</p>
+
+    <h2>Elemento "input" tipo "text"</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    </form>
+
+    <h2>Elemento "input" tipo "password"</h2>
+    <form>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+    </form>
+
+    <h2>Elemento "textarea"</h2>
+    <form>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+    </form>
+
+    <h2>Elemento "select"</h2>
+    <form>
+        <label for="cor">Cor Favorita:</label>
+        <select id="cor" name="cor">
+            <option value="">Selecione uma cor</option>
+            <option value="azul">Azul</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="verde">Verde</option>
+        </select>
+    </form>
+
+    <h2>Elemento "input" tipo "radio"</h2>
+    <form>
+        <label for="masculino">Masculino:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+
+        <label for="feminino">Feminino:</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+    </form>
+
+    <h2>Elemento "input" tipo "checkbox"</h2>
+    <form>
+        <label for="aceito">Aceito os termos e condições:</label>
+        <input type="checkbox" id="aceito" name="aceito">
+    </form>
+
+    <h2>Elemento "input" tipo "submit"</h2>
+    <form>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
