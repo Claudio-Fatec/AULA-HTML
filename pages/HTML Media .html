@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atributos de Formulário para Elementos de Entrada em HTML</title>
+    <title>Tags HTML de Mídia com Exemplos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,77 +15,27 @@
         p {
             margin-bottom: 10px;
         }
-        form {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"], input[type="password"], select, textarea {
-            width: 100%;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
 
-    <h1>Atributos de Formulário para Elementos de Entrada em HTML</h1>
+    <h1>Tags HTML de Mídia com Exemplos</h1>
 
-    <p>Os atributos de formulário podem ser aplicados aos elementos de entrada, como `<input>`, para controlar o comportamento e a aparência dos campos de formulário. Aqui estão alguns atributos comuns:</p>
+    <p>As tags `<audio>` e `<video>` em HTML são usadas para incorporar áudio e vídeo em páginas web. Aqui estão alguns exemplos de como usar essas tags:</p>
 
-    <h2>Atributo "type"</h2>
-    <p>O atributo "type" especifica o tipo de entrada. Alguns valores comuns são:</p>
-    <form>
-        <input type="text" placeholder="Texto">
-        <input type="password" placeholder="Senha">
-        <input type="email" placeholder="Email">
-        <input type="number" placeholder="Número">
-        <input type="date" placeholder="Data">
-        <input type="checkbox"> Aceito os termos e condições
-        <input type="radio" name="sexo" value="masculino"> Masculino
-        <input type="radio" name="sexo" value="feminino"> Feminino
-        <input type="submit" value="Enviar">
-    </form>
+    <h2>Tag `<audio>`: Reproduzindo Áudio</h2>
+    <p>Este exemplo usa a tag `<audio>` para reproduzir um arquivo de áudio:</p>
+    <audio controls>
+        <source src="/AULA-HTML/darth_vader.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
-    <h2>Atributo "name"</h2>
-    <p>O atributo "name" é usado para identificar os dados quando o formulário é enviado:</p>
-    <form>
-        <input type="text" name="nome" placeholder="Nome">
-        <input type="email" name="email" placeholder="Email">
-        <input type="submit" value="Enviar">
-    </form>
-
-    <h2>Atributo "value"</h2>
-    <p>O atributo "value" define o valor inicial de um campo de entrada:</p>
-    <form>
-        <input type="text" value="Texto inicial">
-        <input type="submit" value="Enviar">
-    </form>
-
-    <h2>Atributo "required"</h2>
-    <p>O atributo "required" torna um campo obrigatório antes que o formulário possa ser enviado:</p>
-    <form>
-        <input type="text" required placeholder="Campo obrigatório">
-        <input type="submit" value="Enviar">
-    </form>
-
-    <h2>Atributo "placeholder"</h2>
-    <p>O atributo "placeholder" exibe um texto de exemplo dentro do campo de entrada:</p>
-    <form>
-        <input type="text" placeholder="Insira seu nome">
-        <input type="submit" value="Enviar">
-    </form>
+    <h2>Tag `<video>`: Reproduzindo Vídeo</h2>
+    <p>Este exemplo usa a tag `<video>` para reproduzir um arquivo de vídeo:</p>
+    <video controls width="400">
+        <source src="/AULA-HTML/darth.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
 
 </body>
 </html>
