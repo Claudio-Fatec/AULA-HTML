@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Entrada de Formulário em HTML com Exemplos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tipos de Entrada de Formulário em HTML com Exemplos</h1>
+
+    <p>Os tipos de entrada de formulário em HTML determinam como os dados são coletados e apresentados aos usuários. Aqui estão alguns dos tipos mais comuns:</p>
+
+    <h2>Tipo "text"</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    </form>
+
+    <h2>Tipo "password"</h2>
+    <form>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+    </form>
+
+    <h2>Tipo "email"</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+
+    <h2>Tipo "number"</h2>
+    <form>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+    </form>
+
+    <h2>Tipo "date"</h2>
+    <form>
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data">
+    </form>
+
+    <h2>Tipo "checkbox"</h2>
+    <form>
+        <label for="aceito">Aceito os termos e condições:</label>
+        <input type="checkbox" id="aceito" name="aceito">
+    </form>
+
+    <h2>Tipo "radio"</h2>
+    <form>
+        <label for="masculino">Masculino:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+
+        <label for="feminino">Feminino:</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+    </form>
+
+    <h2>Tipo "submit"</h2>
+    <form>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
