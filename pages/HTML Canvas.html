@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag HTML Canvas com Exemplos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tag HTML Canvas com Exemplos</h1>
+
+    <p>A tag &lt;canvas&gt cria uma área de desenho retangular em uma página web, na qual você pode desenhar gráficos, figuras geométricas, texto e muito mais.
+        Renderização 2D e 3D: Embora a tag &lt;canvas&gt seja mais comumente usada para renderização 2D, também é possível criar gráficos tridimensionais (3D) usando bibliotecas e frameworks JavaScript especializados, como o Three.js.
+        Manipulação via JavaScript: Para desenhar na tag &lt;canvas&gt, você precisa usar JavaScript. O contexto de renderização (getContext) do canvas permite desenhar formas, aplicar estilos, criar animações e interagir com o usuário.
+        Suporte para Animations: A tag &lt;canvas&gt é frequentemente usada para criar animações e jogos interativos na web devido à sua capacidade de desenhar e atualizar rapidamente os elementos na tela.
+        Desempenho: Por ser uma área de desenho nativa no navegador, o &lt;canvas&gt oferece bom desempenho para aplicativos que exigem muitas atualizações gráficas em tempo real.</p>
+
+    <p>A tag &lt;canvas&gt é usada para desenhar gráficos, animações, gráficos interativos e muito mais. Aqui está um exemplo simples de como usar a tag &lt;canvas&gt:</p>
+
+        &lt;canvas&gt id="meuCanvas" width="200" height="200">&lt;/canvas&gt
+
+        &lt;script&gt
+            var canvas = document.getElementById('meuCanvas');
+            var ctx = canvas.getContext('2d');
+    
+            // Desenha um retângulo preenchido
+            ctx.fillStyle = 'blue'; // Cor de preenchimento
+            ctx.fillRect(50, 50, 100, 80); // (x, y, largura, altura)
+            &lt;/script&gt
+
+<br><br>
+        <canvas id="meuCanvas" width="400" height="200"></canvas>
+
+   <script>
+        // Obtém o elemento canvas pelo ID
+        var canvas = document.getElementById('meuCanvas');
+
+        // Verifica se o navegador suporta canvas
+        if (canvas.getContext) {
+            // Obtém o contexto de renderização 2D
+            var ctx = canvas.getContext('2d');
+
+            // Desenha um retângulo preenchido
+            ctx.fillStyle = 'rgb(200, 0, 0)';
+            ctx.fillRect(10, 10, 100, 100);
+            
+        }
+    </script>
+
+</body>
+</html>
