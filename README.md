@@ -30,7 +30,9 @@ Se você quiser contribuir para este projeto, sinta-se à vontade para abrir uma
 Para executar este site localmente em sua máquina, siga estas etapas:
 
 1. Clone este repositório:
+https://github.com/Claudio-Fatec/AULA-HTML.git
 2. Navegue até o diretório do projeto:
+cd AULA-HTML
 3. Abra o arquivo `index.html` em um navegador da web.
 
 ## Licença
