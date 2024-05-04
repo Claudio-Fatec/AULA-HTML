@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag HTML video com Exemplos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tag HTML video com Exemplos</h1>
+
+    <p>A tag &ltvideo&gt em HTML é usada para incorporar vídeos em uma página web. Aqui está um exemplo básico:</p>
+
+    <h2>Exemplo 1: Reproduzindo um Vídeo</h2>
+    <video controls width="400">
+        <source src="exemplo-video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <p>Neste exemplo, usamos a tag &ltvideo&gt para incorporar um vídeo em uma página. O atributo `controls` adiciona controles de reprodução (como botões de play/pause, volume etc.).</p>
+
+    <h2>Exemplo 2: Vídeo com Legendas</h2>
+    <video controls width="400">
+        <source src="exemplo-video.mp4" type="video/mp4">
+        <track src="legendas-pt-br.vtt" kind="subtitles" srclang="pt-br" label="Português (Brasil)">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <p>Neste exemplo, adicionamos legendas ao vídeo usando a tag &lttrack&gt. O arquivo de legendas é fornecido no formato WebVTT (.vtt).</p>
+
+</body>
+</html>
