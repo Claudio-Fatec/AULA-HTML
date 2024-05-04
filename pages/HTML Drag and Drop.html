@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Arrastar e Soltar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #dragItem {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+        #dropZone {
+            width: 300px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+        .highlight {
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Arraste e solte!</h1>
+
+    <p>Uma página HTML com a funcionalidade de arrastar e soltar (drag and drop) geralmente consiste em elementos que podem ser arrastados e uma área na qual esses elementos podem ser soltos. Aqui está uma explicação dos principais componentes de uma página HTML com drag and drop:
+        </p>
+
+      <p>Elemento Arrastável: Este é um elemento HTML que pode ser arrastado pelo usuário. Para tornar um elemento arrastável, geralmente usamos o atributo draggable="true". Por exemplo:</p>
+      <br>
+      COMANDO:
+      &lt;div&gt id="dragItem" draggable="true">Arraste-me&lt;/div&gt
+
+    <div id="dragItem" draggable="true" ondragstart="drag(event)">Arraste-me</div>
+    <br><br>
+
+    <p>Área de Soltar: Este é um elemento HTML que atua como uma zona onde os elementos arrastáveis podem ser soltos. Para permitir que um elemento seja solto na área de soltar, precisamos definir eventos para detectar quando um elemento é arrastado sobre a área de soltar e quando ele é solto na área de soltar. Por exemplo:</p>
+    <br>
+    COMANDO: &lt;div&gt id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)">Solte aqui&lt;/div&gt
+    <br>
+
+    <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="highlightDropZone(event)" ondragleave="unhighlightDropZone(event)">
+        Solte aqui
+    </div>
+<br>
+<p>Precisamos de JavaScript para controlar o comportamento do arrastar e soltar. Isso inclui definir o que acontece quando um elemento é arrastado, permitir que um elemento seja solto na área de soltar e definir o que acontece quando um elemento é solto na área de soltar. Como exemplo de comando abaixo:</p>
+    <br>
+    &lt;script&gt
+        function drag(event) {
+            event.dataTransfer.setData('text/plain', event.target.id);
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData('text/plain');
+            var draggedElement = document.getElementById(data);
+            event.target.appendChild(draggedElement);
+        }
+
+        function highlightDropZone(event) {
+            event.target.classList.add('highlight');
+        }
+
+        function unhighlightDropZone(event) {
+            event.target.classList.remove('highlight');
+        }
+        &lt;/script&gt
+
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData('text/plain', event.target.id);
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData('text/plain');
+            var draggedElement = document.getElementById(data);
+            event.target.appendChild(draggedElement);
+        }
+
+        function highlightDropZone(event) {
+            event.target.classList.add('highlight');
+        }
+
+        function unhighlightDropZone(event) {
+            event.target.classList.remove('highlight');
+        }
+    </script>
+
+</body>
+</html>
